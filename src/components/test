@@ -1,0 +1,112 @@
+services: [
+    [{ name: "Marriage", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://thumbs.dreamstime.com/b/couples-de-mariage-2782051.jpg" },
+    {
+        name: "Anniversaire", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://img.freepik.com/photos-premium/ballons-pour-decoration-fete-fond-fete-anniversaire-decoration-ballon-confetti-anniversaire-serpentin_372999-8675.jpg"
+    },
+    {
+        name: "Seminaire", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://www.brisontraiteur.com/wp-content/uploads/2021/12/visuel_seminaire.jpg"
+    }]]
+
+
+services: [{
+    marriage: [
+        { name: "jours j", descrption: "lkjhgg", img: "hgdgsh" },
+        { name: "fiancaille", descrption: "lkjhgg", img: "hgdgsh" }
+    ]
+}, {
+    anniversaire: [
+        { name: "jours j", descrption: "lkjhgg", img: "hgdgsh" },
+
+        { name: "fiancaille", descrption: "lkjhgg", img: "hgdgsh" }]
+},
+
+{
+    evenement: [
+        { name: "jours j", descrption: "lkjhgg", img: "hgdgsh" },
+        { name: "fiancaille", descrption: "lkjhgg", img: "hgdgsh" }
+    ]
+}]
+
+
+services:[{ name: "Marriage", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://thumbs.dreamstime.com/b/couples-de-mariage-2782051.jpg"
+    },
+    {
+        name: "Anniversaire", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://img.freepik.com/photos-premium/ballons-pour-decoration-fete-fond-fete-anniversaire-decoration-ballon-confetti-anniversaire-serpentin_372999-8675.jpg"
+    },
+    {
+        name: "Seminaire", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://www.brisontraiteur.com/wp-content/uploads/2021/12/visuel_seminaire.jpg"
+    }]
+    mariages: [
+        { name: "jour j", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://static.wixstatic.com/media/a2c93b_32d500fd39f64bfc90739f1b6f14a8f3~mv2.jpg"
+        },
+        
+        {
+        name: "fiancaille", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://static.wixstatic.com/media/a2c93b_0455ec19229c4ee7a5d2378ba2b2bd0b~mv2.jpg"
+        }
+    ]
+     anniversaire: [
+        { name: "enfant", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://static.wixstatic.com/media/a2c93b_26a329c01a0d47ca9a5969762a271efd~mv2.png"
+        },
+        {
+        name: "adulte", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://static.wixstatic.com/media/a2c93b_816cb877818b45cd8157f09210866dbf~mv2.jpg"
+        }
+    ]
+     evenement divers: [
+        { name: "conference", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://www.shrm.org/adobe/dynamicmedia/deliver/dm-aid--e385041a-705e-440c-b406-f1a5a1bf4515/istock-1340856781.jpg"
+        },
+        {
+        name: "fete d'entreprise", descrption: "lk,jnhgbfgj,ynhtgku,jy", img: "https://static.wixstatic.com/media/a2c93b_ac536822019646b8b75f96369245b3f9~mv2.jpg"
+        }
+    ]
+    import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import './Entete.css';
+import logo from './logo.png';
+
+function Entete() {
+    return (
+        <Navbar expand="lg" className="bg-body-tertiary">
+            <Container fluid>
+                { /* <Navbar.Brand href="#">EVENTY</Navbar.Brand> */}
+                <img id='logoo' src={logo
+        } alt="Logo" ></img>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                        className="me-auto my-2 my-lg-0"
+                        style={
+            { maxHeight: '100px'
+            }
+        }
+                        navbarScroll
+                    >
+                        <Nav.Link className="liens" href="#action1">Acceuil</Nav.Link>
+                        <Nav.Link className="liens" href="#action2">A propos</Nav.Link>
+                         <NavDropdown className="liens" title="Services" id="navbarScrollingDropdown">
+                        <NavDropdown.Item className='services' href="#action3">Mariage</NavDropdown.Item>
+
+
+                        <NavDropdown.Item className='services' href="#action4">Anniversaire</NavDropdown.Item>
+                        <NavDropdown.Item className='services' href="#action5">Conférences</NavDropdown.Item>
+                    </NavDropdown>
+                </Nav>
+                <Form className="d-flex">
+                    <Form.Control
+                        type="search"
+                        placeholder="Search"
+                        className="me-2"
+                        aria-label="Search"
+                    />
+                    <Button className="bouton" variant="outline-success">Search</Button>
+                </Form>
+            </Navbar.Collapse>
+        </Container>
+        </Navbar >
+    );
+    }
+
+export default Entete;

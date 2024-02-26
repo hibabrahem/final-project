@@ -1,0 +1,164 @@
+.liens {
+    font-family: brandon grotesque;
+    color: #AF9453;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#navbarScrollingDropdown {
+    font-family: brandon grotesque;
+    color: #AF9453;
+    font-size: 30px;
+}
+
+.liens:hover {
+    font-family: brandon grotesque;
+    color: #AF9453;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.bouton:hover {
+    color: black;
+    border-color: #AF9453;
+    background-color: #AF9453;
+}
+
+.bouton {
+    background-color: white;
+    color: black;
+    border-color: #AF9453;
+}
+#b{ width: 100px;
+height:50px;
+position: relative;top:100px;left: 50px;
+border-radius: 10px;}
+
+.services {
+    text-decoration: none;
+}
+
+.services:hover {
+    background-color: #AF9453;
+}
+
+#logo {
+    width: 150px;
+    height: 80px;
+
+}
+
+#logoo {
+    width: 120px;
+    height: 50px;
+
+}
+
+.footer-text {
+    border-right: 1px solid white;
+    padding: 15px;
+    font-family: brandon grotesque;
+    width: 280px;
+    height: 170;
+}
+
+.footer-icon {
+
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: brandon grotesque;
+    display: flex;
+    gap: 20px;
+    width: 280px;
+}
+
+.container {
+
+    display: flex;
+    gap: 70px;
+    padding-left: 150px;
+    padding-Right: 150px
+}
+
+.box {
+    background-Color: #eeeeee;
+    width: 500px;
+}
+
+.title {
+
+    font-Family: EB Garamond;
+    font-Size: 40px;
+    padding-Top: 40px
+}
+
+.text {
+
+    font-Family: brandon grotesque;
+    font-Size: 16px;
+    padding-Left: 60px;
+    padding-Right: 50px;
+    padding-Bottom: 60px
+}
+
+
+.image {
+    width: 385px;
+    height: 330px;
+    padding-top: 100px;
+    padding-left: 13px;
+    padding-right: 13px;
+
+}
+
+.text-input {
+    text-align: left;
+
+}
+
+.input {
+    border-radius: 5px;
+
+
+}
+
+.sign-in {
+    color: black;
+    border-color: #AF9453;
+    background-color: #AF9453;
+}
+
+.sign-in:hover {
+    color: black;
+    border-color: #AF9453;
+    background-color: #AF9453;
+}
+
+.carousel-control-prev-icon {
+    background-color: #AF9453;
+    /* Change this to the color you desire */
+}
+
+.carousel-control-next-icon {
+    background-color: #AF9453;
+}
+
+.nom {
+    font-family: brandon grotesque;
+    color: #AF9453;
+    font-size: 30px;
+    text-decoration: none;
+    padding-Top: 120px;
+    text-align: left;
+    padding-left: 40px;
+}
+.input2{border-radius: 5px;
+width: 250px;
+}
+.input3 {
+    border-radius: 5px;
+    width:300px;
+    height: 180px;
+}
+.box-input2{display: flex; gap: 40px;text-align: left;}
